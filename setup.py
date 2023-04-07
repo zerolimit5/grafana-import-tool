@@ -12,12 +12,12 @@ requires = [
 setup(
     name=name,
     version=version,
-    description='A Python-based application to import Grafana dashboards using the Grafana API and grafana-client python interface',
+    description='A Python-based application to import Grafana dashboards using the Grafana API and grafana-client python interface. Forked from="https://github.com/peekjef72/grafana-import-tool',
     long_description_content_type='text/markdown',
     long_description=open('README.md', 'r').read(),
     author="author",
-    author_email="jfpik78@gmail.com",
-    url="https://github.com/peekjef72/grafana-import-tool",
+    author_email="",
+    url="https://github.com/zerolimit5/grafana-import-tool",
     entry_points={
         'console_scripts': [
             'grafana-import = grafana_import.cli:main'
