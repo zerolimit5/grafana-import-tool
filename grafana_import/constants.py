@@ -1,3 +1,3 @@
-PKG_NAME = 'grafana-import'
-PKG_VERSION = '0.2.0'
-CONFIG_NAME = 'conf/grafana-import.yml'
+PKG_NAME = "grafana-import"
+PKG_VERSION = "0.2.1"
+CONFIG_NAME = "conf/grafana-import.yml"

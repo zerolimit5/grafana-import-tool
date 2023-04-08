@@ -1,6 +1,6 @@
 rebuild.sh
 */__pycache__/*
-.vscode/*
+#.vscode/*
 build/*
 dist/*
 *.egg-*/

@@ -1,0 +1,16 @@
+{
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  //  "python.defaultInterpreterPath": "/usr/bin/local/python",
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "Source Code Pro",
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "./grafana_import",
+    "-p",
+    "test_*.py"
+  ],
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": true
+}
