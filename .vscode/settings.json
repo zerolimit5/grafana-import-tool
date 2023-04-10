@@ -1,9 +1,13 @@
 {
   "python.terminal.activateEnvInCurrentTerminal": true,
   //  "python.defaultInterpreterPath": "/usr/bin/local/python",
+  "python.defaultInterpreterPath": "~/.pyenv/versions/3.9.6/envs/grafana-tool/bin/python",
+  //  "python.pythonPath": "/Users/jescudero/.pyenv/shims/python",
+  "python.analysis.extraPaths": ["grafana_import"],
   "python.formatting.provider": "black",
   "editor.formatOnSave": true,
   "editor.fontFamily": "Source Code Pro",
+  "python.envFile": "${workspaceFolder}/.env",
   "python.testing.unittestArgs": [
     "-v",
     "-s",

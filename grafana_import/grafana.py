@@ -110,9 +110,9 @@ class Grafana(object):
 
     # ***********************************************
     def find_dashboard(self, dashboard_name):
-        # * use to retrive dashboards which name are matching the lookup named
-        # * some api version didn't return forlderTitle... require to lookup in two phases
-        found_dashs = []
+        # * use to retrieve dashboards which name are matching the lookup named
+        # * some api version didn't return folderTitle... require to lookup in two phases
+        found_dashboards = []
 
         # * init cache for dashboards.
         if len(Grafana.dashboards) == 0:
@@ -140,7 +140,7 @@ class Grafana(object):
         # * find the board uid in the list
         for cur_dash in dashboards:
             if cur_dash["title"] == dashboard_name:
-                # set current dashbard as found candidate
+                # set current dashboard as found candidate
                 board = cur_dash
                 # check the folder part
                 if (
@@ -155,7 +155,7 @@ class Grafana(object):
     # ***********************************************
     def export_dashboard(self, dashboard_name):
         """
-        retrive the dashboard object from Grafana server.
+        retrieve the dashboard object from Grafana server.
            params:
               dashboard_name (str): name of the dashboard to retrieve
            result:
@@ -180,7 +180,7 @@ class Grafana(object):
     # ***********************************************
     def remove_dashboard(self, dashboard_name):
         """
-        retrive the dashboard object from Grafana server and remove it.
+        retrieve the dashboard object from Grafana server and remove it.
            params:
               dashboard_name (str): name of the dashboard to retrieve
            result:

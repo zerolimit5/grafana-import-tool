@@ -104,7 +104,9 @@ def main():
     )
 
     parser.add_argument(
-        "-b", "--base_path", help="set base directory to find default files."
+        "-b",
+        "--base_path",
+        help="set base directory to find default files (Ex. /conf/grafana-import.yml).",
     )
     parser.add_argument("-c", "--config_file", help="path to config files.")
 
