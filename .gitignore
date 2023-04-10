@@ -7,3 +7,4 @@ dist/*
 *.egg-*/
 poc/*
 requirements.txt
+rebuild.sh
