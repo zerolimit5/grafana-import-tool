@@ -1,6 +1,9 @@
 rebuild.sh
 */__pycache__/*
-#.vscode/*
+.vscode
+.vscode/*
 build/*
 dist/*
 *.egg-*/
+poc/*
+requirements.txt

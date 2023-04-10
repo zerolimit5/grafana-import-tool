@@ -4,18 +4,70 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "echo",
+      "label": "rebuild",
       "type": "shell",
-      "command": "echo Hello"
+      "command": "./rebuild.sh"
     },
     {
-      "label": "echo2",
+      "label": "build",
       "type": "shell",
-      "command": "echo Juan",
-      "dependsOn": "echo",
+      "command": "python setup.py build",
+      //"dependsOn": "echo",
       "options": {
         "statusbar": {
-          "label": "Say Hello",
+          "label": "Build",
+          "color": "#3ff148"
+          //					"backgroundColor": "#0f100f"
+        }
+      }
+    },
+    {
+      "label": "install",
+      "type": "shell",
+      "command": "python setup.py install",
+      //"dependsOn": "build",
+      "options": {
+        "statusbar": {
+          "label": "Install",
+          "color": "#3ff148"
+          //					"backgroundColor": "#0f100f"
+        }
+      }
+    },
+    {
+      "label": "bdist_wheel",
+      "type": "shell",
+      "command": "python setup.py bdist_wheel",
+      //"dependsOn": "build",
+      "options": {
+        "statusbar": {
+          "label": "bdist",
+          "color": "#3ff148"
+          //					"backgroundColor": "#0f100f"
+        }
+      }
+    },
+    {
+      "label": "sdist",
+      "type": "shell",
+      "command": "python setup.py sdist",
+      "dependsOn": "build",
+      "options": {
+        "statusbar": {
+          "label": "sdist",
+          "color": "#3ff148"
+          //					"backgroundColor": "#0f100f"
+        }
+      }
+    },
+    {
+      "label": "bdist_sdist",
+      "type": "shell",
+      "command": "python setup.py bdist_wheel sdist",
+      "dependsOn": "build",
+      "options": {
+        "statusbar": {
+          "label": "bdist-sdist",
           "color": "#3ff148"
           //					"backgroundColor": "#0f100f"
         }
