@@ -42,7 +42,7 @@ def save_dashboard(config, args, base_path, dashboard_name, dashboard, action):
         dashboard_name = dashboard["meta"]["folderTitle"] + "_" + dashboard_name
 
     file_name = Grafana.remove_accents_and_space(dashboard_name)
-    output_file = os.path.join(output_file, file_name + ".json")
+    output_file = os.path.join(output_file, "export", file_name + ".json")
     try:
         output = open(output_file, "w")
     except OSError as e:
@@ -294,7 +294,7 @@ def main():
                 import_path = os.path.join(
                     import_path, config["general"]["imports_path"]
                 )
-        import_path = os.path.join(import_path, import_file)
+        import_path = os.path.join(import_path, "import", import_file)
 
         try:
             input = open(import_path, "r")
