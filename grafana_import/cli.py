@@ -120,7 +120,9 @@ def main():
     )
 
     parser.add_argument(
-        "-f", "--grafana_folder", help="the folder name where to import into Grafana."
+        "-f",
+        "--grafana_folder",
+        help="the folder name where to import into Grafana. Ex. folder1 ",
     )
 
     parser.add_argument(
@@ -393,7 +395,7 @@ def main():
                 base_path,
                 config["general"]["dashboard_name"],
                 dash,
-                "exported",
+                "export",
             )
             sys.exit(0)
 
